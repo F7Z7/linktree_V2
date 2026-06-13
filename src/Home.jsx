@@ -4,8 +4,10 @@ import Card1 from "./Components/Card1.jsx";
 
 function Home() {
     return (
-        <div>
-          <Card1 socials={socials} />
+        <div className="flex flex-col items-center justify-center w-full gap-3 h-screen">
+            {socials.map((social) => (
+                <Card1 key={social.id} social={social}/>
+            ))}
         </div>
     );
 }
