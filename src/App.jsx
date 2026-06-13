@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Home from "./Home.jsx";
-import Card from "./Components/Card.jsx";
+import Card1 from "./Components/Card1.jsx";
 import socials from "./assets/data/socials.jsx";
 
 function App() {
