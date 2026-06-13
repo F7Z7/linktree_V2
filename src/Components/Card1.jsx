@@ -1,16 +1,18 @@
 import React from 'react';
 
 
-function Card1({socials}) {
+function Card1({social}) {
     return (
-        <div className="flex flex-col items-center justify-center w-full gap-3 h-screen">
-            {socials.map((social, index) => (
-                <div key={social.id} className={`flex flex-row-reverse items-center gap-2 cursor-pointer w-full justify-center max-w-[200px] p-2 rounded-2xl ${social.hoverColor} transition-colors duration-100 ease-in-out hover:text-black bg-violet-400 text-white font-bold text-xl`}>
-                    <span className="relative" {social.socialMedia}/>
-                    <span className="absolute right-0 bottom-0 left-0 flex items-center" {social.userId}/>
-                    <span className="inline-block">{social.icon}</span>
-                </div>
-            ))}
+        <div className="flex items-center justify-center">
+            <div
+                className="flex items-center gap-2 cursor-pointer p-2 rounded-2xl bg-white/40 border border-black text-white font-bold text-xl max-w-[500px] w-[200px]"
+            >
+                <a href={social.url} target="_blank" rel="noopener noreferrer" className="flex flex-row items-center justify-center w-full  px-2 py-2 text-sm font-medium text-gray-900">
+                    <span>{social.icon}</span>
+                    <span>{social.socialMedia}</span>
+                </a>
+
+            </div>
         </div>
     );
 }
