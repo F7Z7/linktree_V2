@@ -7,7 +7,7 @@ const socials = [
         id: 1,
         socialMedia: "Instagram",
         icon: <Instagram size={20} />,
-        url: `${template}instagram.com/your_username/`
+        url: `${template}instagram.com/fr_zan_/`
     },
     {
         id: 2,
