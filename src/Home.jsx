@@ -5,7 +5,7 @@ import Card1 from "./Components/Card1.jsx";
 function Home() {
     return (
         <div className="flex flex-col items-center justify-center w-full gap-3 h-screen">
-            <div className="flex flex-col items-center gap-2 mb-8">
+            <div className="flex flex-col items-center gap-2 mb-3">
                 <img
                     src="/images/me.png"
                     alt="Profile"
@@ -22,6 +22,11 @@ function Home() {
             {socials.map((social) => (
                 <Card1 key={social.id} social={social}/>
             ))}
+
+
+            <p className="mt-5 text-black/40">
+                Made by <a href="https://github.com/F7Z7" target="_blank">F7Z7</a>
+            </p>
         </div>
     );
 }
